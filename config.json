@@ -1,0 +1,26 @@
+{
+  "locale": {
+    "longDateFormat": {
+      "LT": "HH:mm",
+      "LTS": "HH:mm:ss",
+      "L": "D MMM YYYY",
+      "LL": "D MMMM YYYY",
+      "LLL": "D MMMM YYYY LT",
+      "LLLL": "dddd D MMMM YYYY LT"
+    },
+    "calendar": {
+      "lastDay": "[Yesterday at] LT",
+      "sameDay": "[Today at] LT",
+      "nextDay": "[Tomorrow at] LT",
+      "lastWeek": "[Last] dddd [at] LT",
+      "nextWeek": "dddd [at] LT",
+      "sameElse": "LLLL"
+    }
+  },
+  "timezone": "Europe/London",
+  "formats": {
+    "timezone": "LLLL z",
+    "iso": "YYYY-MM-DDTHH:mm:ss.sss[Z]",
+    "isoFileSystem": "YYYYMMDDThhmmss[Z]"
+  }
+}
