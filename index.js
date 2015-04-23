@@ -13,10 +13,11 @@ function formatter(customConfig, customLocale) {
   }
 
   function format(date, dateFormat, timezone) {
-    if (dateFormat === 'from') return moment(date).tz(timezone || config.timezone).fromNow()
-    if (dateFormat === 'calendar') return moment(date).tz(timezone || config.timezone).calendar()
+    var actualTimezone = timezone || config.timezone || 'Europe/London'
+    if (dateFormat === 'from') return moment(date).tz(actualTimezone).fromNow()
+    if (dateFormat === 'calendar') return moment(date).tz(actualTimezone).calendar()
     var momentFormat = (config.formats && config.formats[dateFormat]) || dateFormat
-    return moment(date).tz(timezone || config.timezone || 'Europe/London').format(momentFormat)
+    return moment(date).tz(actualTimezone).format(momentFormat)
   }
 
   return format
