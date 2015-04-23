@@ -2,8 +2,8 @@
 
 Date, Time and maybe currency in the future, formatter for cf projects.
 
-[![build status](https://secure.travis-ci.org/serby/cf-formatter.svg)](http://travis-ci.org/serby/cf-formatter)
-[![dependency status](https://david-dm.org/serby/cf-formatter.svg)](https://david-dm.org/serby/cf-formatter)
+[![build status](https://secure.travis-ci.org/clocklimited/cf-formatter.svg)](http://travis-ci.org/clocklimited/cf-formatter)
+[![dependency status](https://david-dm.org/clocklimited/cf-formatter.svg)](https://david-dm.org/clocklimited/cf-formatter)
 
 ## Installation
 
