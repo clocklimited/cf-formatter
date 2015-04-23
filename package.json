@@ -1,7 +1,7 @@
 {
   "name": "cf-formatter",
   "description": "Date, Time and maybe currency in the future, formatter for cf projects.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "lint": "jshint .",
     "checkStyle": "jscs .",
