@@ -2,6 +2,7 @@ var formatter = require('..')
   , assert = require('assert')
   , config = require('../config.json')
   , extend = require('lodash.assign')
+  , moment = require('moment-timezone')
 
 describe('cf-formatter', function () {
 
@@ -17,7 +18,7 @@ describe('cf-formatter', function () {
     assert.equal(formatter(config)('2001-01-01T00:00:00Z', 'LL'), '1 January 2001')
   })
 
-  it('should format from default local for timezone', function () {
+  it('should format from default locale for timezone', function () {
     var defaultLocalConfig = extend({}, config)
     ; delete defaultLocalConfig.locale
     assert.equal(formatter(config)('2001-01-01T00:00:00Z', 'LLLL'), 'Monday 1 January 2001 00:00')
@@ -39,4 +40,12 @@ describe('cf-formatter', function () {
     assert(/years ago/.test(output = formatter(config)('2001-01-01T00:00:00Z', 'from')), output)
   })
 
+  it('should allow locale override', function () {
+    assert.equal(formatter(config, 'en-gb')('2001-01-01T00:00:00Z', 'L'), '01/01/2001')
+  })
+
+  it('should not be affected by moments global locale', function () {
+    moment.locale('en-gb')
+    assert.equal(formatter(config)('2001-01-01T00:00:00Z', 'L'), '1 Jan 2001')
+  })
 })
