@@ -41,8 +41,8 @@ log(format(new Date(), 'timezone', 'America/New_York'))
 // 4 April 2015 15:42
 // Today at 15:42
 // a few seconds ago
-// 2015-04-04T15:42:48.4848Z
-// 20150404T034248Z
+// 2015-04-04T15:42:48.123Z
+// 20150404T154248Z
 // Saturday 4 April 2015 10:42 EDT
 ```
 

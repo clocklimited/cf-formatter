@@ -31,7 +31,7 @@ describe('cf-formatter', function () {
 
   it('should format using custom formats', function () {
      assert.equal(formatter(config)('2001-01-01T00:00:00Z', 'iso'), '2001-01-01T00:00:00.000Z')
-     assert.equal(formatter(config)('2001-01-01T00:00:00Z', 'isoFileSystem'), '20010101T120000Z')
+     assert.equal(formatter(config)('2001-01-01T00:00:00Z', 'isoFileSystem'), '20010101T000000Z')
   })
 
   it('should format using ‘from’ style', function () {

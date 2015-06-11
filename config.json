@@ -20,7 +20,7 @@
   "timezone": "Europe/London",
   "formats": {
     "timezone": "LLLL z",
-    "iso": "YYYY-MM-DDTHH:mm:ss.sss[Z]",
-    "isoFileSystem": "YYYYMMDDThhmmss[Z]"
+    "iso": "YYYY-MM-DDTHH:mm:ss.SSS[Z]",
+    "isoFileSystem": "YYYYMMDDTHHmmss[Z]"
   }
 }
