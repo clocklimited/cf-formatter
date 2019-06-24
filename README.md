@@ -3,7 +3,7 @@
 Date, Time and maybe currency in the future, formatter for cf projects.
 
 [![build status](https://secure.travis-ci.org/clocklimited/cf-formatter.svg)](http://travis-ci.org/clocklimited/cf-formatter)
-[![dependency status](https://david-dm.org/clocklimited/cf-formatter.svg)](https://david-dm.org/clocklimited/cf-formatter)
+[![dependency status](https://david-dm.org/clocklimited/cf-formatter.svg)](https://david-dm.org/clocklimited/cf-formatter) [![Greenkeeper badge](https://badges.greenkeeper.io/clocklimited/cf-formatter.svg)](https://greenkeeper.io/)
 
 ## Installation
 
